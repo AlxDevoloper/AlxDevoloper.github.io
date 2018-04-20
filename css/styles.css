@@ -1,86 +1,205 @@
-nav{
-	padding-top: 35px;
-}
-	.text__logotype{
-		font-size: 30px;
-		color: #3c3d42;
-		font-family: "Proxima Nova";
-		text-align: center;
-	}
-		 .menu__text{
-			display: block;
-			padding: 0 20px;
-			margin-top: 15px;
-			color: #747a7a;
-			text-align: center;
-			font-size: 14px;
-			font-family: Raleway;
-		}
-			.text__contacts{
-				font-size: 18px;
-				font-family: Raleway;
-				margin-top: 10px;
-				padding: 0 20px;
-				color: #3c3d42;
-			}
-				.text__contact{
-					color: #3c3d42;
-				}
-/*================HEADER=============*/
-.background-header{
-	background-image: url(../img/background_header.jpg);
+body{
+	background-image: url(../img/background.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100vw; height: 100vh;
+	margin: auto auto;
 }
-	.text__all_landing_page_h1{
-		font-family: Raleway;
-		color: white;
-		font-weight: 700;
-		font-size: 36px;
-		margin-top: 160px;
+.wrapper{
+	margin: 0 auto;
+	width: 99%;
+	height: 100%;
+}
+@font-face {
+    font-family: Dosis;
+    src: url(../fonts/dosis.ttf);
+   }
+/*==========================MENU===================*/
+menu{
+	margin-top: 28px;
+}
+	ul{
+		text-align: right;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
 	}
-		.text__header_landing_page_h5{
-			font-family: Raleway;
-			font-weight: 50;
-			font-size: 36px;
-			color: white;
-			margin-top: -28px;
+		li{
+			padding-left: 27px;
+			display: inline;
+			text-decoration: none;
 		}
-			.text__header_slogan{
-				font-family: Raleway;
-				font-size: 16px;
-				color: #97c1cb;
-				margin-top: 40px;
+			li, a{
+				text-decoration: none;
+				color: white;
+				text-transform: uppercase;
+				font-size: 18px;
+				transition: 0.3s;
 			}
-				.button{
-					font-family: Raleway;
-					font-weight: 700;
-					font-size: 21px;
-					border-radius: 900px;
-					width: 240px;
-					height: 55px;
-					border: 3px solid #98b5b6;
-					text-align: center;
-					margin-top: 60px;
+				li, a:hover{
+					color: #6f6868;
 				}
-					.button, .download{
-						color: white;
-						padding-top: 10px;
-					}
-						.button, .download:hover{
-							color: #98b5b6;
-							text-decoration: none;
-						}
-							.blocks__header{
-								padding-bottom: 255px;
-								margin-top: 40px;
-							}
-/*========================FIGURE============*/
-.text__figure_one{
-	color: #636c6c;
-	text-align: center;
-	margin-top: -20px;
+/*====================MAIN==============*/
+.text_slogan{
+	color: white;
+	text-transform: uppercase;
+	font-family: Dosis, Helvetica, Arial, sans-serif;\
 }
-	.text__figure_two{
-		text-align: center;
+	.slogan{
+		margin-top: 75px;
+		font-size: 51px;
 	}
+		.text_about_me{
+			font-size: 21px;
+			padding-top: 20px;
+			line-height: 1.5;
+		}
+.projects{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 290px;
+	height: 290px;
+	text-align: center;
+	display: inline-block;
+	background-image: url(../img/sorry_no_projec.png);
+	background-repeat: no-repeat;
+}
+.form{
+	margin-top: 90px;
+	height: 310px;
+	width: 480px;
+	margin-left: 35%;
+}
+	.form:focus{
+		border-color: white;
+		outline:none;
+	}
+		.button_send{
+			width: 230px;
+			height: 40px;
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.7);
+			vertical-align: center;
+			font-family: Dosis, Helvetica, Arial, sans-serif;
+			margin-left: 35%;
+			margin-top: 30px;
+			border: solid 1px white;
+			border-radius: 4px;
+			padding-top: 15px;
+		}
+			.check_box_form{
+				margin-left: 45%;
+				width: 30px;
+				height: 30px;
+				margin-top: 20px;
+			}
+				.text_check_box_form{
+					color: white;
+					font-family: Dosis, Helvetica, Arial, sans-serif;
+					font-size: 20px;
+					margin-left: 35%;
+					margin-top: -30px;
+				}
+@media (min-width:481px) and (max-width:767px) {
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	.slogan{
+		margin-top: 90px;
+		font-size: 51px;
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+}
+
+
+@media (max-width:480px) { 
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	ul, li, a{
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width:767px) { 
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 16px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (max-width:1224px) {
+	body{
+		background-image: url(../img/background_3.jpg);
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 15px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (min-width:768px) and (max-width:1199px) { 
+	body{
+		background: url(../img/background_56.jpg)
+	}
+	.text_about_me{
+			font-size: 30px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (min-width:1900px) { 
+	body{
+		background-image: url(../img/background.jpg);
+	}
+	ul{
+		text-align: right;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 35px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+	.slogan{
+		font-size: 60px;
+	}
+	li, a{
+			text-decoration: none;
+			color: white;
+			text-transform: uppercase;
+			font-size: 38px;
+			transition: 0.3s;
+			}
+}
+
+
+@media (min-width:1200px) { 
+	body{
+		background-image: url(../img/background.jpg);
+	}
+}
