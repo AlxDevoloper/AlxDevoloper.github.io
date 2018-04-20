@@ -1,0 +1,86 @@
+nav{
+	padding-top: 35px;
+}
+	.text__logotype{
+		font-size: 30px;
+		color: #3c3d42;
+		font-family: "Proxima Nova";
+		text-align: center;
+	}
+		 .menu__text{
+			display: block;
+			padding: 0 20px;
+			margin-top: 15px;
+			color: #747a7a;
+			text-align: center;
+			font-size: 14px;
+			font-family: Raleway;
+		}
+			.text__contacts{
+				font-size: 18px;
+				font-family: Raleway;
+				margin-top: 10px;
+				padding: 0 20px;
+				color: #3c3d42;
+			}
+				.text__contact{
+					color: #3c3d42;
+				}
+/*================HEADER=============*/
+.background-header{
+	background-image: url(../img/background_header.jpg);
+	background-repeat: no-repeat;
+	width: 100vw; height: 100vh;
+}
+	.text__all_landing_page_h1{
+		font-family: Raleway;
+		color: white;
+		font-weight: 700;
+		font-size: 36px;
+		margin-top: 160px;
+	}
+		.text__header_landing_page_h5{
+			font-family: Raleway;
+			font-weight: 50;
+			font-size: 36px;
+			color: white;
+			margin-top: -28px;
+		}
+			.text__header_slogan{
+				font-family: Raleway;
+				font-size: 16px;
+				color: #97c1cb;
+				margin-top: 40px;
+			}
+				.button{
+					font-family: Raleway;
+					font-weight: 700;
+					font-size: 21px;
+					border-radius: 900px;
+					width: 240px;
+					height: 55px;
+					border: 3px solid #98b5b6;
+					text-align: center;
+					margin-top: 60px;
+				}
+					.button, .download{
+						color: white;
+						padding-top: 10px;
+					}
+						.button, .download:hover{
+							color: #98b5b6;
+							text-decoration: none;
+						}
+							.blocks__header{
+								padding-bottom: 255px;
+								margin-top: 40px;
+							}
+/*========================FIGURE============*/
+.text__figure_one{
+	color: #636c6c;
+	text-align: center;
+	margin-top: -20px;
+}
+	.text__figure_two{
+		text-align: center;
+	}
