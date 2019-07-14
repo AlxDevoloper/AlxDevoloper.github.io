@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>Alx Web Dev</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
-<body>
-	<div class="wrapper">
-		<menu>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="pages/portfolio.html">Portfolio</a></li>
-				<li><a href="pages/contacts.html">Contacts</a></li>
-			</ul>
-		</menu>
-		<main>
-			<div class="text_slogan">
-				<p class="slogan">Long time no see!</p>
-				<img src="img/slogan_border_bottom.png">
-				<p class="text_about_me">Hello world! My name is alex you visit<br/>
-				my site-porfolio, you must know my motto -<br/>
-				I do not need unmotivated customers, <br/>
-				I'm first and foremost a person and do it for<br/>
- 				people, and not for my creation to lie on the<br/>
- 				edge of the shelf
- 				</p>
-			</div>
-		</main>
-	</div>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="модули">Модули</h1>
+<p>Ещё до ES6 уже существовали несколько систем модулей в JavaScript: AMD, CommonJS, UMD. Но эти системы не поддерживаются как оффициальный стандарт ECMAScript,<br>
+к тому же они требуют сборки.</p>
+<p>Новый стандарт, принесённый ES6, не требует никакой сборки и более удобен в использовании. Эти модули называются ESM (ES Modules).<br>
+Для их работы вам всего лишь надо указать тип в теге <code>&lt;script&gt;</code>, <code>type="module"</code>. Теперь давайте посмотрим как это работает на практике.</p>
+<h3 id="замечание">Замечание</h3>
+<p>Около <a href="https://caniuse.com/#search=javascript%20modules">85% браузеров</a> поддерживают модули, что довольно неплохо, но на всякий случай лучше вставить полифилл:</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">nomodule</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/browser-es-module-loader/dist/babel-browser-build.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">nomodule</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://unpkg.com/browser-es-module-loader<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Если браузер не загружает модули, используете альтернативную загрузку через <code>&lt;script type="nomodule"&gt;</code>.</p>
+<h1 id="экспорт-модуля">Экспорт модуля</h1>
+<p>Для наглядности мы экспортируем функцию, которая будет складывать два числа:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Для экспорта мы используем ключевое слово <code>export</code>. Сохраним файл как <strong>add.js</strong>.</p>
+<h1 id="импорт-модуля">Импорт модуля</h1>
+<p>Теперь нам нужно его импортировать. Делается это очень просто. В HTML страницу вставляем тег скрипта, указываем что это модуль.</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Затем, в <strong>main.js</strong>, мы импортируем app.js:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> add <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./add.js'</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Вот так просто юзать модули! Но самое крутое, это то, что мы можем импортировать их не только с того же сервера, но и из других источников, то есть запрашивать скрипты через CORS.</p>
+<h1 id="загрузка-модулей-с-cdn">Загрузка модулей с CDN</h1>
+<p>Существует один CDN, который легко и просто позволяет загружать ESM. Он называется <a href="https://unpkg">unpkg</a>. Для большинства библиотек нужно в конце URL добавить <code>?module</code>, и вы получите ESM версию.<br>
+Для простого примера импортируем <a href="https://github.com/developit/htm">htm</a> и <a href="https://github.com/developit/preact">preact</a>:</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> html<span class="token punctuation">,</span> render <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'https://unpkg.com/htm/preact/standalone.mjs'</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span>html<span class="token template-string"><span class="token string">`&lt;h1&gt;Hello World&lt;/h1&gt;`</span></span><span class="token punctuation">,</span> document<span class="token punctuation">.</span>body<span class="token punctuation">)</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Здесь мы загрузили ESM скрипт с экспортированными <code>html</code> и <code>render</code>.  Большое количество модулей можно загружать с unpkg, включая React, Vue, LoDash, VHTML, Preact и т.д.</p>
+<h1 id="заключение">Заключение</h1>
+<p>Пока что не все браузеры поддерживают ES модули, поэтому всё же лучше использовать системы сборки, если у вас продакшен среда. Для маленьких приложух, где нужно что-то быстро проверить, ESM отлично подходит. Надеемся, что в скором времени всё больше и больше браузеров смогут поддерживать данную фичу.</p>
+</div>
 </body>
+
 </html>
