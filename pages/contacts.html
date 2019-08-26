@@ -23,11 +23,32 @@
 			</div>
 			<div class="contact_form">
 				<textarea class="form" name="comment" placeholder="Here you can write me"></textarea>
-				<div class="button_send"><a href="">Send</a></div>
+				<div class="buy button_send"><a href="">Send</a></div>
 				<input class="check_box_form" type="checkbox" unchecked>
-				<p class="text_check_box_form">You people?</p>
+				<p class="text_check_box_form">You human?</p>
 			</div>
 		</main>
+		<script type="text/javascript">
+		$("#buy").click(function(){
+			var tsize = $("#tsize").val(),
+				  model = $("#model")[0].innerText,
+				  articul= $("#articul")[0].innerText,
+				  price = $("#price")[0].innerText,
+				  email = $("[name=email]").val(),
+				  phone = $("[name=phone]").val();
+			$.post('send.php',
+			{
+				tsize: tsize,
+				model: model,
+				articul: articul,
+				price: price,
+				email: email,
+				phone: phone,
+			}, function(){
+				alert('Заявка отправлена!');
+			});
+		});
+	</script>
 	</div>
 </body>
 </html>
