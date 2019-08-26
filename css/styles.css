@@ -1,0 +1,205 @@
+body{
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto auto;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 99%;
+	height: 100%;
+}
+@font-face {
+    font-family: Dosis;
+    src: url(../fonts/dosis.ttf);
+   }
+/*==========================MENU===================*/
+menu{
+	margin-top: 28px;
+}
+	ul{
+		text-align: right;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+		li{
+			padding-left: 27px;
+			display: inline;
+			text-decoration: none;
+		}
+			li, a{
+				text-decoration: none;
+				color: white;
+				text-transform: uppercase;
+				font-size: 18px;
+				transition: 0.3s;
+			}
+				li, a:hover{
+					color: #6f6868;
+				}
+/*====================MAIN==============*/
+.text_slogan{
+	color: white;
+	text-transform: uppercase;
+	font-family: Dosis, Helvetica, Arial, sans-serif;\
+}
+	.slogan{
+		margin-top: 75px;
+		font-size: 51px;
+	}
+		.text_about_me{
+			font-size: 21px;
+			padding-top: 20px;
+			line-height: 1.5;
+		}
+.projects{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 290px;
+	height: 290px;
+	text-align: center;
+	display: inline-block;
+	background-image: url(../img/sorry_no_projec.png);
+	background-repeat: no-repeat;
+}
+.form{
+	margin-top: 90px;
+	height: 310px;
+	width: 480px;
+	margin-left: 35%;
+}
+	.form:focus{
+		border-color: white;
+		outline:none;
+	}
+		.button_send{
+			width: 230px;
+			height: 40px;
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.7);
+			vertical-align: center;
+			font-family: Dosis, Helvetica, Arial, sans-serif;
+			margin-left: 35%;
+			margin-top: 30px;
+			border: solid 1px white;
+			border-radius: 4px;
+			padding-top: 15px;
+		}
+			.check_box_form{
+				margin-left: 45%;
+				width: 30px;
+				height: 30px;
+				margin-top: 20px;
+			}
+				.text_check_box_form{
+					color: white;
+					font-family: Dosis, Helvetica, Arial, sans-serif;
+					font-size: 20px;
+					margin-left: 35%;
+					margin-top: -30px;
+				}
+@media (min-width:481px) and (max-width:767px) {
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	.slogan{
+		margin-top: 90px;
+		font-size: 51px;
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+}
+
+
+@media (max-width:480px) { 
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	ul, li, a{
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width:767px) { 
+	body{
+		background: url(../img/background_2.jpg)
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 16px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (max-width:1224px) {
+	body{
+		background-image: url(../img/background_3.jpg);
+	}
+	ul{
+		text-align: left;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 15px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (min-width:768px) and (max-width:1199px) { 
+	body{
+		background: url(../img/background_56.jpg)
+	}
+	.text_about_me{
+			font-size: 30px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+}
+
+
+@media (min-width:1900px) { 
+	body{
+		background-image: url(../img/background.jpg);
+	}
+	ul{
+		text-align: right;
+		font-family: Dosis, Helvetica, Arial, sans-serif;
+	}
+	.text_about_me{
+			font-size: 35px;
+			padding-top: 20px;
+			line-height: 1.5;
+	}
+	.slogan{
+		font-size: 60px;
+	}
+	li, a{
+			text-decoration: none;
+			color: white;
+			text-transform: uppercase;
+			font-size: 38px;
+			transition: 0.3s;
+			}
+}
+
+
+@media (min-width:1200px) { 
+	body{
+		background-image: url(../img/background.jpg);
+	}
+}

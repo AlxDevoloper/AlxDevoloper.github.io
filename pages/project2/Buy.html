@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nothing New</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+	<div class="wrapper">
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nothing New</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+	<div class="wrapper col-lg-12">
+		<ul class="other_pages">
+			<li class="other_page"><a href="index.html">Home</a></li>
+			<li class="other_page"><a href="media.html">Social Media</a></li>
+			<li class="other_page"><a href="market.html">Market</a></li>
+			<li class="other_page"><a href="about.html">About us</a></li>
+		</ul>
+	</div>
+	<div class="row">
+		<div class="col-lg-7">
+			<img class="one_tovar" src="img/1.jpg" alt="">
+		</div>
+		<div class="col-lg-3">
+			<div class="opisanie">
+				<p class="opi">Size:</p>
+				<select name="attr" id="tsize">
+  					<option>M</option>
+  					<option>L</option>
+  					<option>XL</option>
+  					<option>XXL</option> 
+				</select>
+				<p id="model" class="opi">Model: One</p>
+				<p id="articul" class="opi">Articul: 123456</p>
+				<p id="price" class="opi">Price: 30$</p>
+				<input placeholder="Your Email" name="email" form="data"></p>
+				<input placeholder="Your phone number" name="phone" form="data"></p>
+				<button id="buy">BUY</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#buy").click(function(){
+			var tsize = $("#tsize").val(),
+				  model = $("#model")[0].innerText,
+				  articul= $("#articul")[0].innerText,
+				  price = $("#price")[0].innerText,
+				  email = $("[name=email]").val(),
+				  phone = $("[name=phone]").val();
+			$.post('send.php',
+			{
+				tsize: tsize,
+				model: model,
+				articul: articul,
+				price: price,
+				email: email,
+				phone: phone,
+			}, function(){
+				alert('Заявка отправлена!');
+			});
+		});
+	</script>
+</body>
+</html>
+	</div>
+</body>
+</html>

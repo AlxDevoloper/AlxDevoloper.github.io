@@ -1,0 +1,217 @@
+html { 
+	overflow-x: hidden;
+
+}
+.wrapper{
+	height: 100%;
+	margin: 0 auto;
+	width: 1280px;
+}
+@font-face{
+	src: url(../fonts/UbuntuBold.ttf);
+    font-family: UbuntuBold;
+}
+@font-face{
+	font-family: UbuntuReg;
+    src: url(../fonts/UbuntuReg.ttf);
+}
+@font-face{
+	font-family: UbuntuMed;
+    src: url(../fonts/UbuntuMed.ttf);;
+}
+@font-face{
+	font-family: MyriadPro;
+    src: url(../fonts/MyriadPro.otf);
+}
+@font-face{
+	font-family: OpenSansReg;
+    src: url(../fonts/OpenSansReg.ttf);
+}
+@font-face{
+	font-family: NunitoReg;
+    src: url(../fonts/NunitoReg.ttf);
+}
+@font-face{
+	font-family: UbuntuLI;
+    src: url(../fonts/UbuntuLI.ttf);;
+}
+/*=======================NAV MENU================*/
+.logo, .logo2{
+	position: absolute;
+	margin: 30px 0 0 30px;
+}
+nav{
+	background-color: white;
+	display: inline-block;
+	height: 90px;
+}
+	ul{
+		margin: 35px 0 0 770px;
+	}
+		ul, li{
+			display: inline-block;
+			padding-left: 30px;
+		}
+			ul, li, a{
+				text-decoration: none;
+				font-family: UbuntuReg, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				color: #868b94;
+				transition: 0.3s;
+				font-size: 16px;
+			}
+				ul, li, a:hover{
+				text-decoration: none;
+				font-family: UbuntuReg, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				color: #343d46;
+			}
+/*======================HEADER========================*/
+.header{
+	background-image: url(../img/background_header.jpg);
+	height: 720px;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+	background-repeat: no-repeat;
+	background-position: center 100%
+}
+.text_slogan{
+	font-family: UbuntuBold, Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	text-transform: uppercase;
+	padding-top: 240px;
+	color: white;
+	padding-left: 50px;
+	line-height: 1.5em;
+}
+	.text_slogan_down{
+		font-size: 24px;
+		font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+		color: white;
+		padding-left: 50px;
+		padding-top: 40px;
+	}
+		.text_sd_down{
+			font-family: UbuntuMed, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			padding-left: 50px;
+			padding-top: 70px;
+			color: white;
+		}
+			.tsd_free_span{
+				background-color: #ffce54;
+				border-radius: 3px;
+			}
+				.input_text{
+					height: 55px;
+					width: 425px;
+					margin-left: 50px;
+					margin-top: 30px;
+					font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+					font-size: 18px;
+					border-radius: 7px;
+					border: 1px solid white;
+					padding-left: 25px;
+				}
+					.it_button{
+						border: 1px solid #77c344;
+						font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+						font-size: 18px;
+						border-radius: 7px;
+						height: 60px;
+						width: 110px;
+						background-color: #77c344;
+						color: white;
+					}
+						.clients{
+							height: 160px;
+							width: 1280px;
+							background-image: url(../img/background_clients.jpg);
+							-moz-background-size: 110%; /* Firefox 3.6+ */
+						    -webkit-background-size: 110%; /* Safari 3.1+ и Chrome 4.0+ */
+						    -o-background-size: 110%; /* Opera 9.6+ */
+						    background-size: 100%; /* Современные браузеры */
+							background-repeat: no-repeat;
+						}
+/*=====================FIGURE====================*/
+.why_tankapp{
+	height: 170px;
+	color: #5d6471;
+	font-size: 40px;
+	font-family: UbuntuMed, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+	.why_tankapp_text{
+		padding-top: 70px;
+	}
+
+.why_tank_app_all_text{
+	margin-top: 60px;
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/background-figure-text.png);
+	background-repeat: no-repeat;
+}
+	.why_tank_app_text{
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+		.why_tank_app_text_in{
+			color: #4f5765;
+			font-family: UbuntuMed, Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			margin-left: 80px;
+			margin-top: -30px;
+		}
+			.wtati_down{
+				padding-top: 35px;
+				font-family: MyriadPro, Arial, Helvetica, sans-serif;
+				color: #9499a2;
+				line-height: 1.1em;
+			}
+/*=================BLOCK 2======================*/
+.block_two{
+	width: 100%;
+	height: 730px;
+	background: #f6f6f7;
+}
+	.wtapt{
+		margin-top: 130px;
+	}
+		.wtati_down_two{
+			line-height: 1.7em;
+		}
+/*==========FOOTER=================*/
+.block_one_footer{
+	margin-top: 100px;
+}
+	.footer_text{
+		font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+		font-size: 24px;
+		text-align: center;
+		color: #5a626e;
+	}
+		.input_text_footer{
+					height: 55px;
+					width: 425px;
+					margin-left: 350px;
+					margin-top: 30px;
+					font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+					font-size: 18px;
+					border-radius: 7px;
+					border: 1px solid #d1d1d1;
+					padding-left: 25px;
+					margin-bottom: 100px;
+				}
+					.it_button_footer{
+						border: 1px solid #77c344;
+						font-family: UbuntuLI, Arial, Helvetica, sans-serif;
+						font-size: 18px;
+						border-radius: 7px;
+						height: 60px;
+						width: 110px;
+						background-color: #77c344;
+						color: white;
+					}

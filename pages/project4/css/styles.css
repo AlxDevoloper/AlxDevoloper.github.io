@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.body{
+	margin: auto auto;
+	width: 100%;
+	height: 100%;
+}
+/*=======================FONTS================*/
+@font-face{
+	font-family: CheryWash;
+	src: url(../fonts/CherrySwash-Regular.ttf);
+}
+@font-face{
+	font-family: HelveticaBold;
+	src: url(../fonts/HelveticaLTStd-Bold.otf);
+}
+@font-face{
+	font-family: HelveticaLight;
+	src: url(../fonts/HelveticaLTStd-Light.otf);
+}
+@font-face{
+	font-family: HelveticaRoman;
+	src: url(../fonts/HelveticaLTStd-Roman.otf);
+}
+/*=====================NAV MENU===============*/
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #4d98a3;
+}
+#logo{
+	font-size: 40px;
+	color: white;
+	margin-top: 27px;
+	position: absolute;
+	margin-left: 54px;
+	font-family: CheryWash;
+}
+	ul, li, .menu{
+		text-decoration: none;
+		display: inline-block;
+		float: right;
+		font-family: HelveticaRoman;
+		font-size: 18px;
+		color: #dce3e4;
+		transition: 0.3s;
+	}
+		ul, li, a:hover{
+			color: white;
+		}
+			ul, li{
+				margin-right: 40px;
+				margin-top: 20px;
+			}
+/*============HEADER============*/
+.slider{
+	background-image: url(../img/background_header.jpg);
+	background-size: cover;
+	height: 476px;
+}
+	.slogan{
+		font-family: HelveticaBold;
+		font-size: 44px;
+		color: #e4e4e4;
+		text-align: center;
+		padding-top: 125px;
+		text-transform: uppercase;
+	}
+		.text_slider{
+					text-align: center;
+					margin-top: 40px;
+				}
+			.button_slider{
+				width: 230px;
+				height: 45px;
+				border: 2px solid #e4e4e4;
+				text-align: center;
+				text-decoration: none;
+				color: #e4e4e4;
+				font-family: HelveticaLight;
+				font-size: 30px;
+				border-radius: 3px;
+				padding: 9px 40px 9px 40px;
+			}
+				.slider_claps{
+					margin-left: 46%;
+					margin-top: 125px;
+				}
+					.claps{
+						width: 7px;
+						height: 7px;
+						border-radius: 10px;
+						background-color: white;
+						display: inline-block;
+						margin: auto auto;
+						margin-left: 10px;
+						transition: 0.2s;
+					}
+						.claps:hover{
+							background-color: #69728c;
+						}
+/*==============FIGURE===============*/
+.content_figure{
+	margin-top: 90px;
+	text-align: center
+}
+	.text_content_figure{
+		font-size: 30px;
+		font-family: HelveticaRoman;
+		color: #6d707a;
+		line-height: 1.5em;
+	}
+		.text_content_figure_down{
+			padding-top: 45px;
+			font-family: HelveticaRoman;
+			font-size: 14px;
+			text-align: center;
+			color: #6d707a;
+		}
+			.img_figure{
+				padding: 70px 62.5px 80px 62.5px;
+			}
+.information_of_people{
+	background: #00d089;
+}
+	.img_photo{
+		padding-left: 450px;
+		padding-top: 100px;
+	}
+		.skobki{
+			font-size: 338px;
+			font-family: HelveticaBold;
+			color: black;
+			margin-left: 620px;
+			margin-top: -350px;
+			opacity: 0.3;
+		}
+			.name{
+				position: absolute;
+				margin-left: 640px;
+				margin-top: -145px;
+				font-family: HelveticaBold;
+				font-size: 28px;
+				color: white;
+				text-transform: uppercase; 
+			}
+				.text_profile{
+					font-family: HelveticaLight;
+					font-size: 18px;
+					margin-top: 65px;
+					text-align: center;
+					line-height: 1.6em;
+					color: white;
+					padding-bottom: 90px;
+				}
+/*=================FOOTER============*/
+.block{
+	width: 430px;
+	height: 430px;
+	border-radius: 500px;
+	position: absolute;
+	background-color: white;
+	margin-left: 35%;
+	margin-top: 50px;
+	opacity: 0.9;
+}
+	.inputs{
+		margin-left: 15px;
+		margin-top: 100px;
+		text-align: center;
+	}
+		.input_one{
+			font-family: HelveticaLight;
+			height: 30px;
+			width: 275px;
+			margin-top: 10px;
+			border: 1px solid #b4b5b9;
+			border-radius: 1px;
+		}
+			.input_two{
+				height: 80px;
+			}
+				.input_one::placeholder{
+					color: #b4b5b9;
+					font-family: HelveticaLight;
+					font-size: 14px;
+					padding-left: 17px;
+				}
+					.ok{
+						position: absolute;
+						margin-top: 130px;
+						margin-left: -170px;
+					}
+.copyright{
+	margin-top: -3px;
+	width: 100%;
+	height: 40px;
+	background-color: #00d089;
+}
+	.text_footer{
+		font-family: HelveticaRoman;
+		font-size: 14px;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		padding-top: 13px;
+	}
