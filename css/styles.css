@@ -61,13 +61,13 @@ menu{
 	background-image: url(../img/sorry_no_projec.png);
 	background-repeat: no-repeat;
 }
-.form{
+textarea{
 	margin-top: 90px;
 	height: 310px;
 	width: 480px;
 	margin-left: 35%;
 }
-	.form:focus{
+	textarea:focus{
 		border-color: white;
 		outline:none;
 	}
